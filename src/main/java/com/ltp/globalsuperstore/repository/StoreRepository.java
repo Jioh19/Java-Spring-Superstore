@@ -23,8 +23,4 @@ public class StoreRepository {
     public List<Item> getItems() {
         return items;
     }
-
-    public int size() {
-        return items.size();
-    }
 }
