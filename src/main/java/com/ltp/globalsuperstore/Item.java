@@ -10,16 +10,17 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Past;
 
 public class Item {
-    @NotBlank(message = "Please choose a category")
+
+    @NotBlank(message = "Please select a category")
     private String category;
     @NotBlank(message = "Name cannot be blank")
     private String name;
     @Min(value = 0, message = "Price cannot be negative")
     private Double price;
-    @Min(value = 0, message = "Price cannot be negative")
+    @Min(value = 0, message = "Discount cannot be negative")
     private Double discount;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Past(message = "Date must be of the past")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date date;
     private String id;
 
