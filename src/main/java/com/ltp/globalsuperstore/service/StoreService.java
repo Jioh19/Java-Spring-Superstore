@@ -10,7 +10,7 @@ import com.ltp.globalsuperstore.repository.StoreRepository;
 
 public class StoreService {
 
-    StoreRepository storeRepository = new StoreRepository();
+    private StoreRepository storeRepository = new StoreRepository();
 
     public Item getItem(int index) {
         return storeRepository.getItem(index);

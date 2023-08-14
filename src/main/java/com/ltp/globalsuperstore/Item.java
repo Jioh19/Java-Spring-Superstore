@@ -24,6 +24,15 @@ public class Item {
     private Date date;
     private String id;
 
+    public Item(String category, String name, Double price, Double discount, Date date) {
+        this.category = category;
+        this.name = name;
+        this.price = price;
+        this.discount = discount;
+        this.date = date;
+        this.id = UUID.randomUUID().toString();
+    }
+
     public Item() {
         this.id = UUID.randomUUID().toString();
     }
